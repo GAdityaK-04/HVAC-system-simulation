@@ -1,5 +1,5 @@
 # importing necessary modules
-
+from constants import *
 import math
 import random
 import time
@@ -96,3 +96,7 @@ def time_24hr(t):
         minute=0
 
     return f"{hours:02}{minute:02}hrs"
+
+# defining core equation
+def temp_change_equation(t, Q_hvac, Q_ambient, Q_occupants):
+    return (temp_change_list[-1] + dt*(Q_hvac + Q_ambient + Q_occupants)/C)
