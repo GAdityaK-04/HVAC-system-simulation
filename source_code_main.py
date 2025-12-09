@@ -1,3 +1,4 @@
+from HVAC_functions import *
 # main code:
 
 print("============= HVAC - Heating Ventilating Air Conditioning System ==============")
